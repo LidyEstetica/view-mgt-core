@@ -31,3 +31,76 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Dependências
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Diretórios de build e distribuição
+/dist/
+/dist_electron/
+/build/
+/out/
+/.output/
+
+# Arquivos de cache
+.cache/
+.npm/
+.eslintcache
+.stylelintcache
+.parcel-cache
+.rollup.cache
+.vite/
+
+# Arquivos de ambiente local
+.env
+.env.local
+.env.*.local
+
+# Arquivos de log
+logs
+*.log
+
+# Arquivos específicos do sistema operacional
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Arquivos de IDE/editores
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.history/
+*.sublime-workspace
+
+# Arquivos específicos do Electron
+*.tsbuildinfo
+electron-builder.env
+
+# Arquivos temporários
+/temp
+/tmp
+*.tmp
+*.bak
+*.swp
+
+# Arquivos de cobertura de testes
+coverage/
+.nyc_output/
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Outros arquivos que podem ser gerados durante o desenvolvimento
+.fusebox/
+*.local 

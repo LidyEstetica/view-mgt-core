@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Lidy Estética</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #FFF0F5;
+      color: #4A4A4A;
+      text-align: center;
+    }
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    img.logo {
+      max-width: 100px;
+      margin-bottom: 15px;
+    }
+    h1 {
+      color: #FF69B4;
+      margin-bottom: 10px;
+    }
+    .version {
+      color: #888;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+    .copyright {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="../src/assets/LOGO-LIDY.jpeg" alt="Logo Lidy Estética" class="logo">
+    <h1>Lidy Estética</h1>
+    <div class="version">Versão 1.0.0</div>
+    <p>Sistema completo para gerenciamento de estética.</p>
+    <p>Gerencie agendamentos, clientes, funcionários e serviços.</p>
+    <div class="copyright">
+      &copy; 2025 Lidy Estética. Todos os direitos reservados.
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const versionEl = document.querySelector('.version');
+      if (window.electron) {
+        versionEl.textContent = `Versão 1.0.0 (Electron ${window.electron.getVersion()})`;
+      }
+    });
+  </script>
+</body>
+</html> 

@@ -1,0 +1,56 @@
+@use "sass:color";
+
+// Cores
+$primary-color: #FF69B4; // Rosa
+$primary-color-dark: darken-color($primary-color, 10%);
+$secondary-color: #FFB6C1; // Rosa claro
+$secondary-color-dark: darken-color($secondary-color, 10%);
+$success-color: #98FB98; // Verde claro
+$success-color-dark: darken-color($success-color, 10%);
+$danger-color: #FF6B6B; // Vermelho claro
+$danger-color-dark: darken-color($danger-color, 10%);
+$warning-color: #FFD700; // Dourado
+$info-color: #87CEEB; // Azul claro
+$light-color: #FFF0F5; // Lavanda claro
+$dark-color: #4A4A4A; // Cinza escuro
+$text-color: $dark-color;
+$text-color-light: lighten-color($dark-color, 30%);
+$text-color-secondary: lighten-color($dark-color, 20%);
+$background-color: #F5F5F5; // Cinza muito claro para fundo
+
+// Breakpoints
+$mobile: 768px;
+$tablet: 1024px;
+$desktop: 1200px;
+
+// Sidebar
+$sidebar-width: 250px;
+$sidebar-collapsed-width: 70px;
+
+// Mixins
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: $desktop) {
+    @content;
+  }
+}
+
+// Funções
+@function darken-color($color, $percentage) {
+  @return color.adjust($color, $lightness: -$percentage);
+}
+
+@function lighten-color($color, $percentage) {
+  @return color.adjust($color, $lightness: $percentage);
+} 
