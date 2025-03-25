@@ -9,11 +9,26 @@ yarn.lock
 # Diretórios de build e distribuição
 /dist/
 /dist_electron/
+/web-project/dist_electron/
+dist_electron/
+win-unpacked/
+**/dist_electron/
+**/win-unpacked/
 /build/
 /out/
 /.output/
 /release/
 /instalador/
+
+# Arquivos específicos do Electron que excedem o limite do GitHub
+**/LidyEstetica-Setup*.exe
+**/*Setup*.exe
+**/Lidy Estética.exe
+**/*.exe
+**/win-unpacked/**
+**/win-unpacked/
+web-project/dist_electron/win-unpacked/
+web-project/dist_electron/LidyEstetica-Setup-*.exe
 
 # Arquivos específicos do Electron
 electron-builder.env
@@ -22,7 +37,6 @@ electron-builder.env
 /electron/build/
 /electron/out/
 /electron-builder.yml
-*.exe
 *.dmg
 *.AppImage
 *.snap
